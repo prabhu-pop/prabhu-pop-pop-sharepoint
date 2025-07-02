@@ -762,4 +762,9 @@ footer ul li {
         font-size: 17px;
     }
 }
-
+    header .navbar-expand-xl.navbar-nav .dropdown-menu {
+        position: absolute;
+        top: 60px;
+        background: #000;
+        border-radius: 0;
+    }
