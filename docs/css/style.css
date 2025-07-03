@@ -702,6 +702,9 @@ footer ul li {
     font-size: 20px;
 }
 @media(max-width:767px) {
+    section.clsbanner.secondbanner, section.clsbanner {
+        margin-top: 70px;
+    }
     ul.dropdown-menu.show {
         background: #000;
     }
