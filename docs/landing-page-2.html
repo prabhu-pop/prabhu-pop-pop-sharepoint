@@ -103,8 +103,17 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
+                <!-- <div class="carousel-item active">
+                    <img src="images/banner-2.png" class="d-block w-100" alt="Banner Image">
+                    <div class="carousel-caption container d-none d-md-block">
+                        <div class="banner-inside">
+                            <h5>Our Story</h5>
+                            <button type="button" class="btn btn-secondary">Know More</button>
+                        </div>
+                    </div>
+                </div> -->
                 <div class="carousel-item active">
-                    <img src="images/banner-2.png" class="d-block w-100" alt="Banner Image">
+                    <img src="images/banner-5.png" class="d-block w-100" alt="Banner Image">
                     <div class="carousel-caption container d-none d-md-block">
                         <div class="banner-inside">
                             <h5>Our Story</h5>
@@ -113,7 +122,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/banner-2.png" class="d-block w-100" alt="Banner Image">
+                    <img src="images/banner-6.png" class="d-block w-100" alt="Banner Image">
                     <div class="carousel-caption container d-none d-md-block">
                         <div class="banner-inside">
                             <h5>Our Story</h5>
@@ -122,7 +131,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/banner-2.png" class="d-block w-100" alt="Banner Image">
+                    <img src="images/banner-4.png" class="d-block w-100" alt="Banner Image">
                     <div class="carousel-caption container d-none d-md-block">
                         <div class="banner-inside">
                             <h5>Our Story</h5>
@@ -182,7 +191,7 @@
                         </div>
                     </a>
                     <a href="#tab4" class="card-wrapper">
-                        <div class="circle-logo">
+                        <div class="circle-logo"> 
                             <img src="images/icon-14.svg" class="posting" alt="Logo" />
                         </div>
                         <div class="card">
@@ -197,8 +206,8 @@
             </div>
         </div>
     </section>
-    <section class="spotlight clsGlobalannouncement videosec">
-        <div id="tab1" class="container">
+    <section class="spotlight clsGlobalannouncement videosec" id="tab1" >
+        <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-4">
                     <h1><b>Our Purpose & Principles</b></h1>
@@ -298,8 +307,8 @@
             </div>
         </div>
     </section>
-    <section class="cleleadership">
-        <div id="tab2" class="container">
+    <section class="cleleadership" id="tab2" >
+        <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-4">
                     <h1><b>Our Leadership</b></h1>
@@ -365,7 +374,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row pt-3" id="tab3">
                 <div class="col-md-12 mt-5">
                     <h1><b>Global Studio Map</b></h1>
                 </div>
@@ -373,15 +382,18 @@
                     <img src="images/map.jpg" class="img-fluid" alt="">
                 </div>
             </div>
-            <div class="row" id="tab4">
+           
+            <div class="row">
                 <div class="col-md-12 mb-4">
+                   
                     <h1><b>Our People</b></h1>
                 </div>
+                <div class="pt-5"  id="tab4"></div>
             </div>
         </div>
     </section>
     <section class="ourpeople high-led">
-        <div id="tab3" class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div id="news-slider1" class="owl-carousel">
@@ -602,7 +614,7 @@
                     </div>
                     <div class="float-end">
                         <a class="wit" data-bs-toggle="collapse" href="#collapseExample1" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
+                            aria-expanded="false" aria-controls="collapseExample" id="myText">
                             View all
                         </a>
                     </div>
@@ -627,7 +639,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="warning-content">
-                        <h1>New Site Under Construction</h1>
+                        <h1> Under Construction</h1>
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             x="0px" y="0px" width="100.001px" height="70px" viewBox="0 0 100 68">
                             <g id="large">
@@ -787,6 +799,14 @@
                 autoPlay: false,
             });
         });
+
+        $('#myText').click(function() {
+  const originalText = "Close";
+  const newText = "View All";
+  
+  const currentText = $(this).text();
+  $(this).text(currentText === originalText ? newText : originalText);
+});
     </script>
 </body>
 
